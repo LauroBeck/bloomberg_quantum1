@@ -1,4 +1,5 @@
 {
   "name": "BloombergQuantum",
+  "projects": [ "src" ],
   "languageFeatures": []
 }
