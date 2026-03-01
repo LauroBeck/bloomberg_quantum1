@@ -1,3 +1,4 @@
+
 import qsharp
 from collections import Counter
 import numpy as np
@@ -45,3 +46,7 @@ print("\nCorrelations:")
 print("SP–NDX:", round(np.corrcoef(sp_vals, ndx_vals)[0, 1], 3))
 print("SP–FTSE:", round(np.corrcoef(sp_vals, ftse_vals)[0, 1], 3))
 print("RATE–NDX:", round(np.corrcoef(rate_vals, ndx_vals)[0, 1], 3))
+=======
+# main.py
+print("Welcome to Beck Quantum Python Project!")
+
