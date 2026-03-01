@@ -1,8 +1,15 @@
-# run_quantum.py
 import qsharp
-from BeckQuantumProject import MyQuantumOps
+from qsharp import TargetProfile
 
-qsharp.reload()  # Load Q# operations
+# Initialize runtime
+qsharp.init(target_profile=TargetProfile.Base)
 
-result = MyQuantumOps.HelloQ.simulate()
-print(f"Quantum operation result: {result}")
+# Evaluate a Q# expression directly
+result = qsharp.eval("""
+{
+    Message("Hello from Q#!");
+    Zero
+}
+""")
+
+print("Quantum result:", result)
